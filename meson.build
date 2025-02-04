@@ -80,6 +80,10 @@ if common_build
   subdir('common')
 endif
 
+if get_option('cpld-fw-manager').enabled()
+  subdir('cpld')
+endif
+
 if build_tests.allowed()
   subdir('test')
 endif

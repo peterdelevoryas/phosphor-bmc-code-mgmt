@@ -133,3 +133,8 @@ option(
     value: '/run/media/rwfs-alt/cow',
     description: 'The dir for alt-rwfs partition.',
 )
+
+option(
+    'cpld-fw-manager', type: 'feature', value: 'enabled',
+    description: 'Enable CPLD firmware manager',
+)
